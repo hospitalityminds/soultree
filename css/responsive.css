@@ -1,0 +1,167 @@
+@media (max-width:768px){
+     /* *************   Section start   *********** */
+
+     .section-flex{
+        height: 100%;
+        height: auto;
+        /* padding: 0 20px; */
+    }
+
+     .section-flex .section-left{
+        flex:100%;
+        padding-bottom: 60px;
+        text-align: center;
+      }
+    
+      .section-flex .section-right{
+        flex:100%;
+        padding-bottom: 40px;
+      }
+
+      .section-flex .para{
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .section-flex .img-container{
+        margin-left: 0px;
+    }
+
+
+    .section-flex .img-container::after{
+        /* top: 0px; */
+        left: 10px;
+        width: 500px;
+        height: 300px;
+    }
+}
+
+
+
+
+@media (max-width:500px){
+
+    .section-flex .img-container img{
+        width: 90%;
+        height: 90%;
+    }
+
+    .section-flex .img-container::after{
+        top: -10px;
+        left: -2px;
+        width: 380px;
+        height: 230px;
+    }
+
+    
+    
+  /* ************************** Home Galley Grid  ***************************** */
+
+   .image-grid{
+    margin: 20px auto;
+    width: 100%;
+    display:grid;
+    grid-template-rows:repeat(3,250px);
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+  }
+
+
+  .image-grid .item img{
+    width: 100%;
+  }
+  
+  .item:nth-child(1)
+  {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  
+  .item:nth-child(2)
+  {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  
+  .item:nth-child(3)
+  {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  
+  /* *******  Gallery Finished  ********** */
+
+
+
+}
+
+
+@media (max-width:460px){
+
+    .section-flex .img-container::after{
+        top: -10px;
+        left: -2px;
+        width: 350px;
+        height: 220px;
+    }
+
+}
+
+
+@media only screen and (max-width:425px){
+
+    .section-flex .img-container::after{
+        top: -10px;
+        left: -2px;
+        width: 320px;
+        height: 200px;
+    }
+}    
+
+
+
+
+@media only screen and (max-width:400px){
+
+    .section-flex .img-container img{
+        width: 95%;
+        height: 95%;
+    }
+
+    .section-flex .img-container::after{
+        top: -10px;
+        left: -8px;
+        width: 300px;
+        height: 190px;
+    }
+}    
+
+
+
+@media only screen and (max-width:370px){
+
+    .section-flex .img-container::after{
+        top: -10px;
+        left: -8px;
+        width: 280px;
+        height: 180px;
+    }
+}    
+
+
+@media only screen and (max-width:340px){
+
+    .section-flex .img-container::after{
+        width: 260px;
+        height: 160px;
+    }
+}   
+
+
+@media only screen and (max-width:320px){
+
+    .section-flex .img-container::after{
+        width: 220px;
+        height: 140px;
+    }
+}
