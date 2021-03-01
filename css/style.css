@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playball&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 
+
+
+html, body{
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden!important;
+
+}
+
+
 :root{
 	--main-color:#af973f;
 	--secondary-color:#225127;
 	--title-color:#fff;
 	--bold-color:#212529;
 	--text-color:#656665;
-}
-
-body, html
-{
-	font-family: 'Poppins', sans-serif;
-	overflow-x: hidden!important;
-}
-
-html{
-	overflow-x: hidden!important;
 }
 
 a:hover
@@ -53,6 +53,7 @@ a:hover
 
 .navbar{
 	top:0px;
+	overflow-x: hidden;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link 
@@ -67,6 +68,7 @@ a:hover
 	/* background: #403f3f; */
 	background:#fafaf6;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .normal
@@ -267,8 +269,6 @@ a:hover
 }
 
 .flower-top-right{
-    background-repeat: no-repeat;
-    background-size: contain;
     position: absolute;
     top:-35px;
     right:-35px;
@@ -276,6 +276,7 @@ a:hover
     height: 100px;
     z-index: 999;
     transform: rotate(60deg);
+	overflow-x: hidden;
 }
 
 .flower .flower-top{
@@ -345,7 +346,7 @@ a:hover
 	font-weight: 500;
 	text-align: justify;
 	margin-top: 35px;
-	padding-left: 12px;
+	padding: 0 12px;
 	color: #656665;
 }
 

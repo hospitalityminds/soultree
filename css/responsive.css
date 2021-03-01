@@ -125,6 +125,14 @@
         width: 180px;
         height: 160px;
     }
+
+    .gallery .gallery-branch{
+        position: absolute;
+        left:-4%;
+        top:-4%;
+        width: 250px;
+        height: 200px;
+    }
 }
 
 
@@ -242,6 +250,11 @@
         width: 300px;
         height: 190px;
     }
+
+    .gallery .gallery-branch{
+        width: 220px;
+        height: 170px;
+    }
 }    
 
 
@@ -278,5 +291,10 @@
     .section-flex .img-container::after{
         width: 220px;
         height: 140px;
+    }
+
+    .gallery .gallery-branch{
+        width: 200px;
+        height: 200px;
     }
 }
