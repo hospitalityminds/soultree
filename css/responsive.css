@@ -1,4 +1,26 @@
 @media (max-width:768px){
+
+    .flower-top{
+        left:-40px;
+    }
+    
+    .flower-top-right{
+        right:-44px;
+    }
+
+
+    .flower .flower-top{
+        top:-60px;
+        left:-50px;
+        width: 170px;
+        height: 170px;
+        z-index: -1;
+    }
+
+    .abheading{
+        padding-top: 70px;
+    }
+
      /* *************   Section start   *********** */
 
      .section-flex{
@@ -34,12 +56,98 @@
         width: 500px;
         height: 300px;
     }
+
+
+    /* ************   Contact us start   ************ */
+     
+    .contact-container{
+        padding: 60px 10px;
+    }
+
+    .things .title{
+        max-width: 100%;
+    }
+
+    .things .title::after{
+        bottom: 0;
+        left:38%;
+    }
+    
+    .things .title::before{
+        bottom: -7px;
+        left:47%;
+    }
+
+    .things .things-branch{
+        right:-5%;
+        top:-4%;
+        width: 250px;
+        height: 200px;
+    }
+
+    .gallery .gallery-branch{
+        position: absolute;
+        left:-4%;
+        top:-1%;
+        width: 300px;
+        height: 270px;
+        transform: rotate(-25deg);
+    }
+
+    footer{
+        padding: 60px 20px;
+    }
+
+    footer .footer-start{
+        text-align: center;
+    }
+    
+    footer .para{
+        max-width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width:570px){
+    .overlay1{
+        display: none;
+    }
+
+    .amenbg{
+        height: 700px;
+    }
+
+    .things .things-branch{
+        right:-5%;
+        top:-0%;
+        width: 180px;
+        height: 160px;
+    }
 }
 
 
 
-
 @media (max-width:500px){
+
+    .flower-top{
+        display: none;
+    }
+
+    .flower .flower-top{
+        display: block;
+        top:-40px;
+        left:-30px;
+        width: 150px;
+        height: 150px;
+        z-index: -1;
+    }
+
+
+    .logo{
+        max-width: 120px;
+    }
 
     .section-flex .img-container img{
         width: 90%;
@@ -150,6 +258,13 @@
 
 
 @media only screen and (max-width:340px){
+
+    .things .things-branch{
+        right:-5%;
+        top:-0%;
+        width: 150px;
+        height: 120px;
+    }
 
     .section-flex .img-container::after{
         width: 260px;
