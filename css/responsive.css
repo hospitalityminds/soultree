@@ -95,7 +95,7 @@
     }
 
     footer{
-        padding: 60px 20px;
+        padding: 60px 0px;
     }
 
     footer .footer-start{
@@ -138,6 +138,10 @@
 
 
 @media (max-width:500px){
+
+    .title{
+        font-size: 32px;
+    }
 
     .flower-top{
         display: none;

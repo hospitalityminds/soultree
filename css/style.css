@@ -2397,7 +2397,7 @@ button:focus
 	.aboutheading 
 	{
 	    font-size: 30px;
-	    padding-top: 30%;
+	    /* padding-top: 30%; */
 	    font-weight: 800;
 	}
 
