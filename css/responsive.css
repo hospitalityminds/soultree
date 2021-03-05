@@ -107,6 +107,27 @@
         text-align: center;
     }
 
+
+    /* *********************   Rooms start  ********************** */
+
+    .emrald{
+        display: none;
+    }
+
+    .roomsbg{
+        order: 1;
+        margin-bottom: 60px;
+    }
+
+    .alexslider{
+        order:0;
+    }
+
+
+    .emraldslider{
+        order:0;
+    }
+
 }
 
 
