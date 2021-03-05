@@ -29,7 +29,7 @@ h1{
 } */
 
 .bird{
-    background: url("../birds.svg");
+    background: url("../birds.png");
     background-size: auto 100%;
     width: 88px;
     height: 125px;
@@ -130,4 +130,34 @@ h1{
     100%{
         transform: translate(110vw, 0) scale(.6);
     }
+}
+
+
+
+@media (max-width:500px){
+    
+    .bird-container-one{
+        top: 5%;
+        animation-duration: 7s;
+        animation-delay: 0;
+    }
+
+    .bird-container-two{
+        top: 20%;
+        animation-duration: 5s;
+        animation-delay: 1s;
+    }
+
+    .bird-container-three{
+        top: 55%;
+        animation-duration: 7s;
+        animation-delay: 9.5s;
+    }
+
+    .bird-container-four{
+        top: 80%;
+        animation-duration: 8s;
+        animation-delay: 10.25s;
+    }
+
 }

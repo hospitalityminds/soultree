@@ -619,9 +619,16 @@
      
 
 
-   
+	<audio autoplay id="audio" src="pianoNature.mp3"></audio>
 
-<script>
+	<div class="scrolltop float-right">
+		<a class="floating-btn" id="audio-btn">
+			<i class="fa fa-music" id="mybtn" onclick="topfunction()"></i>
+		</a>
+	  </div>
+
+
+    <script>
 			$(document).ready(function(){
 				//Examples of how to assign the Colorbox event to elements
 				$(".group1").colorbox({rel:'group1'});
@@ -651,6 +658,24 @@
 				});
 			});
 		</script>
+
+
+
+         <script>
+        
+		     document.querySelector('#audio-btn').addEventListener("click",function(){
+                
+				var isplaying = document.querySelector('#audio').getAttribute('src');
+
+				 if(isplaying== "pianoNature.mp3"){
+					document.querySelector('#audio').src = "";
+				 }
+				 else{
+					document.querySelector('#audio').src = "pianoNature.mp3";
+				 }
+			 });
+
+		 </script>
 </body>
 
 </html>
