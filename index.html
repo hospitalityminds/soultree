@@ -629,18 +629,15 @@
      
 
 
-	<audio autoplay id="audio" src="pianoNature.mp3"></audio>
+	<audio autoplay class="audio" src="pianoNature.mp3"></audio>
 
-	<!-- <embed name="myMusic" loop="true" hidden="true" id="audio" src="pianoNature.mp3"></embed> -->
+	<iframe src="pianoNature.mp3" type="audio/mp3" allow="autoplay" class="audio"></iframe>
 
 	<div class="scrolltop float-right">
 		<a class="floating-btn" id="audio-btn">
-			<i class="fa fa-music" id="mybtn" onclick="topfunction()"></i>
+			<i class="fa fa-music" id="mybtn"></i>
 		</a>
 	  </div>
-
-
-	  <iframe src="https://cross-origin.com/myvideo.html" allow="autoplay">
 
 
     <script>
@@ -680,19 +677,19 @@
         
 		     document.querySelector('#audio-btn').addEventListener("click",function(){
                 
-				var isplaying = document.querySelector('#audio').getAttribute('src');
+				var isplaying = document.querySelectorAll('.audio');
 
-				 if(isplaying== "pianoNature.mp3"){
-					document.querySelector('#audio').src = "";
-				 }
-				 else{
-					document.querySelector('#audio').src = "pianoNature.mp3";
-				 }
+				isplaying.forEach(playing =>{
+
+					if(playing.getAttribute('src')=="pianoNature.mp3"){
+				     	playing.setAttribute("src", " ");
+					}
+					else{
+						playing.setAttribute("src", "pianoNature.mp3");
+					}
+					});
+				
 			 });
-
-
-
-
 
 
 			 var detectios = '';
