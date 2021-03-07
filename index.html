@@ -711,14 +711,14 @@
             // remove play button UI
         });
 	
-$('body').on('click touchstart', function () {
+
+        $('body').on('touchstart', function () {
             const videoElement = document.getElementById('audio');
             if (videoElement.playing) {
                 // video is already playing so do nothing
             }
             else {
-                // video is not playing
-                // so play video now
+                // video is not playing  // so play video now
                 videoElement.play();
             }
     });
