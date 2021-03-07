@@ -711,7 +711,7 @@
             // remove play button UI
         });
 	
-$('body').on("swipe", function () {
+$('body').on('click touchstart', function () {
             const videoElement = document.getElementById('audio');
             if (videoElement.playing) {
                 // video is already playing so do nothing
@@ -720,7 +720,6 @@ $('body').on("swipe", function () {
                 // video is not playing
                 // so play video now
                 videoElement.play();
-				console.log("touch");
             }
     });
 });
