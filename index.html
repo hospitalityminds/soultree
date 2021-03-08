@@ -629,7 +629,7 @@
      
 
 
-	<audio autoplay class="audio" src="pianoNature.mp3"></audio>
+	<!-- <audio autoplay class="audio" src="pianoNature.mp3"></audio> -->
 
 	<iframe src="pianoNature.mp3" type="audio/mp3" allow="autoplay" class="audio" style="display: none;"></iframe>
 
@@ -675,19 +675,37 @@
 
          <script>
         
-		     document.querySelector('#audio-btn').addEventListener("click",function(){
+		    //  document.querySelector('#audio-btn').addEventListener("click",function(){
                 
-				var isplaying = document.querySelectorAll('.audio');
+			// 	var isplaying = document.querySelectorAll('.audio');
 
-				isplaying.forEach(playing =>{
+			// 	isplaying.forEach(playing =>{
 
-					if(playing.getAttribute('src')=="pianoNature.mp3"){
-				     	playing.setAttribute("src", " ");
+			// 		if(playing.getAttribute('src')=="pianoNature.mp3"){
+			// 	     	playing.setAttribute("src", " ");
+			// 		}
+			// 		else{
+			// 			playing.setAttribute("src", "pianoNature.mp3");
+			// 		}
+			// 		});
+				
+			//  });
+
+
+
+			 document.querySelector('#audio-btn').addEventListener("click",function(){
+                
+				var isplaying = document.querySelector('.audio');
+
+				// isplaying.forEach(playing =>{
+
+					if(isplaying.getAttribute('src')=="pianoNature.mp3"){
+				     	isplaying.setAttribute("src", " ");
 					}
 					else{
-						playing.setAttribute("src", "pianoNature.mp3");
+						isplaying.setAttribute("src", "pianoNature.mp3");
 					}
-					});
+					// });
 				
 			 });
 
@@ -721,18 +739,37 @@
 		// });
 
 
-        $('body').on('click touchstart', function () {
-            const videoElement = document.querySelectorAll('.audio');
 
-			videoElement.forEach(element =>{
 
-				if (element.playing) {
+
+		$('body').on('click touchstart', function () {
+            const videoElement = document.querySelector('.audio');
+
+			// videoElement.forEach(element =>{
+
+				if (videoElemen.playing) {
 				}
 				else {
-					element.play();
+					videoElemen.play();
 				}
-           });
+        //    });
         });
+
+
+
+
+        // $('body').on('click touchstart', function () {
+        //     const videoElement = document.querySelectorAll('.audio');
+
+		// 	videoElement.forEach(element =>{
+
+		// 		if (element.playing) {
+		// 		}
+		// 		else {
+		// 			element.play();
+		// 		}
+        //    });
+        // });
 
 		 </script>
 </body>
