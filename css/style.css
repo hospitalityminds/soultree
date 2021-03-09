@@ -2295,6 +2295,12 @@ button:focus
 	{
     	padding-left: 15px;
 	}
+
+	
+	.testimonial .swiper-slide {
+		height: 650px!important;
+	}
+
   }
 
 
@@ -2302,6 +2308,15 @@ button:focus
   and (min-width: 320px) 
   and (max-width: 576px) 
   {
+
+	.testimonial{
+		/* height: 770px; */
+	}
+
+	.testimonial .swiper-slide {
+		height: 620px!important;
+	}
+
 
   	
   	.normal
@@ -2673,9 +2688,7 @@ button:focus
 	}
 
 
-	.testimonial{
-		height: 750px!important;
-	}
+
   }
 
   @media only screen 
@@ -3528,6 +3541,21 @@ button:focus
 
 
 
+  @media (max-width:375px){
+	.testimonial .swiper-slide{
+	  height: 680px!important;
+	}
+  }
+
+  @media (max-width:320px){
+	.testimonial .swiper-slide{
+	  height: 720px!important;
+	}
+  }
+
+
+
+
 
 
 
@@ -3794,9 +3822,9 @@ button:focus
 /* *********************   Testimonial start   *********************** */
 
 .testimonial{
-	margin: 50px 0;
-	padding: 50px 0;
-	height: 600px;
+	/* margin: 50px 0; */
+	padding: 100px 0 50px;
+	/* height: 700px; */
 }
 
 .testimonial .title,
@@ -3845,6 +3873,7 @@ button:focus
 .testimonial .swiper-slide {
 	text-align: center;
 	font-size: 18px;
+	height: 500px;
 	/* background: #fff; */
 
 	/* Center slide text vertically */
@@ -3862,19 +3891,24 @@ button:focus
 	align-items: center;
   }
 
+  .testimonial .gallbutton{
+	  margin-top: 10px;
+  }
+
+
+	.testimonial .testimonial-star{
+		max-width: 20px;
+	}
+
+	.swiper-pagination-bullet{
+		margin: 0 5px!important;
+		width: 10px;
+		height: 10px;
+		background: var(--secondary-color);
+	}
+
 /* *****   Testimonial end   ********* */
 
-
-.testimonial .testimonial-star{
-    max-width: 20px;
-}
-
-.swiper-pagination-bullet{
-    margin: 0 5px!important;
-    width: 10px;
-    height: 10px;
-    background: var(--secondary-color);
-}
 
 
 
