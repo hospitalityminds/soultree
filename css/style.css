@@ -2671,6 +2671,11 @@ button:focus
     {
     	right: 134px !important;
 	}
+
+
+	.testimonial{
+		height: 700px!important;
+	}
   }
 
   @media only screen 
