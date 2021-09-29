@@ -4246,6 +4246,15 @@ footer h2{
   .contact-container .contact-content-container .contact-content a:hover{
 	color: var(--main-color);
   }
+
+  /* *******************   contact button direct through whatsapp ******************* */
+
+
+.contact-btn img{
+	width: 80px;
+	margin-top: 10px;
+    margin-bottom: 15px;
+}
   
   
 
