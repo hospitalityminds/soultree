@@ -1064,7 +1064,7 @@ a:hover {
 }
 
 .bullet {
-    border: 1px solid #ae9641;
+    border: 1px solid #212529;
     margin-top: 50px;
     padding: 10px;
     margin-bottom: 50px;
@@ -1680,8 +1680,7 @@ button:focus {
     .image6,
     .image7,
     .image8,
-    .image9,
-    {
+    .image9 {
         margin: 0 auto;
         text-align: left;
         display: block;
